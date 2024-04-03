@@ -33,7 +33,8 @@ export default function Home() {
         </div>
         <h1 className="z-10 text-gray-600 text-7xl font-bold">auto-xkcd</h1>
         <p className="text-gray-600 font-medium">
-          Generates an XKCD list using gpt and injects it client-side into the page.
+          Generates an XKCD list using gpt and injects it client-side into the
+          page.
           <br />
           Iteratively updates the design of each component.
           <br />

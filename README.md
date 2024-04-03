@@ -8,6 +8,5 @@ When the page has been generated it will continue to improve on the design itera
 
 ## issues
 
-There's a data race that can cause it to stop updating components.
-
-The LLM response can also be faulty somehow which can cause it to crash. Refresh restarts the whole thing.
+- There's a data race that can cause it to stop updating components
+- The LLM response can be faulty (imports a missing dependency, syntax error, etc) which can cause it to crash
