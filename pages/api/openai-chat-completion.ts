@@ -10,7 +10,7 @@ export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse,
 ) {
-  const { message }: { message: string } = req.query;
+  const { message }: { message: string } = req.query as any;
   console.log(message);
 
   res.setHeader("Content-Type", "text/event-stream");

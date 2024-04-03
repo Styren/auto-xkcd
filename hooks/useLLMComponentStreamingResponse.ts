@@ -180,7 +180,7 @@ export default function useLLMComponentStreamingResponse() {
         // Transpile and convert ESM modules to CJS, so it can be injected in a browser env
         const data = transform(raw, {
           presets: ["react"],
-        }).code;
+        }).code as string;
 
         // We inject this require function so we can detect all the dependencies of the component
         const r = (path: string) => {
